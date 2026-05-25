@@ -1,52 +1,51 @@
-# gerenciador-de-tarefas
+# Gerenciador de Tarefas (Task Manager)
 
-This template should help get you started developing with Vue 3 in Vite.
+> Aplicação front-end desenvolvida para o gerenciamento de tarefas do dia a dia, com foco em usabilidade, performance e componentização.
 
-## Recommended IDE Setup
+## Sobre o Projeto
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
+Este é um Gerenciador de Tarefas interativo construído no ecossistema Vue 3. O projeto foi desenhado para aplicar boas práticas de desenvolvimento front-end, utilizando TypeScript para garantir segurança de tipagem e Vite para um ambiente de desenvolvimento rápido e otimizado. A arquitetura da interface foi pensada para entregar uma experiência fluida e responsiva ao usuário.
 
-## Type Support for `.vue` Imports in TS
+## Funcionalidades
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+*   **Listagem de Tarefas:** Visualização clara das tarefas registradas, separando o que está pendente do que já foi finalizado.
+*   **Gestão de Atividades:** Adição rápida de novas tarefas com atualização imediata e reativa na interface.
+*   **Controle de Status:** Marcação ágil de tarefas, permitindo alternar facilmente entre os estados de pendente e concluída.
+*   **Design Responsivo:** Estruturação visual adaptada para funcionamento adequado em diferentes tamanhos de tela e dispositivos.
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Tecnologias Utilizadas
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+A aplicação foi desenvolvida utilizando as seguintes tecnologias:
 
-## Customize configuration
+*   **Vue 3:** Framework progressivo, utilizando os recursos modernos da Composition API.
+*   **TypeScript:** Superset do JavaScript que adiciona tipagem estática, garantindo maior previsibilidade e segurança no código.
+*   **Vite:** Ferramenta de build e servidor de desenvolvimento altamente otimizado para o ecossistema moderno.
+*   **Vitest:** Framework de testes unitários rápido e nativo do ambiente Vite.
+*   **HTML5 & CSS3:** Estruturação semântica e estilização customizada dos componentes da interface.
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+## Estrutura e Boas Práticas
 
-## Project Setup
+O desenvolvimento deste repositório seguiu princípios sólidos de engenharia de software voltados para o front-end:
 
-```sh
-npm install
-```
+*   **Componentização:** Divisão da interface em componentes menores, isolados e reutilizáveis, facilitando a manutenção do código.
+*   **Reatividade e Estado:** Utilização dos recursos nativos do Vue 3 para um gerenciamento eficiente do estado local e reatividade dos dados em tela.
+*   **Testabilidade:** Configuração estruturada para testes unitários, assegurando a confiabilidade das regras de negócio aplicadas na interface.
 
-### Compile and Hot-Reload for Development
+---
 
-```sh
+## Como Executar o Projeto
+
+### Execucao em modo de desenvolvimento
+
 npm run dev
-```
 
-### Type-Check, Compile and Minify for Production
+### Teste e Qualidade de código
 
-```sh
-npm run build
-```
-
-### Run Unit Tests with [Vitest](https://vitest.dev/)
-
-```sh
 npm run test:unit
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
 npm run lint
-```
+
+### Build para producao
+
+npm run build
+
+npm run dev
